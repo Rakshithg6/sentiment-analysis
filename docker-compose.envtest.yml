@@ -1,0 +1,6 @@
+services:
+  backend:
+    image: python:3.10-slim
+    env_file:
+      -  ./.env
+    command: ["sh", "-c", "echo $GEMINI_API_KEY && sleep 30"]
